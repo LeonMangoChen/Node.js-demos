@@ -27,7 +27,7 @@ function fiterChapters(html) {
         }
         videos.each(function(item) {
             var video = $(this).find('.J-media-item');
-            var videoTitle = video.text();
+            var videoTitle = video.text().trim();
             var id = video.attr('href').split('video/')[1];
 
             chapterData.videos.push({
